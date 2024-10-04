@@ -8,19 +8,22 @@ export function ListagemVeiculo({ setEditMode, setEditId, setProducts, products 
   const [editingProduct, setEditingProduct] = useState(null);
   const [formData, setFormData] = useState({ marca: '', modelo: '', ano: '', preco: '' });
 
-  function lista() {setMostrarLista(true);}//Mostra Lista
-  function excluir() {setMostrarLista(false);}//Tira lista
+  function lista() { setMostrarLista(true); } // Mostra Lista
+  function excluir() { setMostrarLista(false); } // Tira lista
 
-  //Deleta um elemento
+  // Deleta um elemento com confirmação
   const handleDelete = async (id) => {
-    await fetch(`${url}/${id}`, {
-      method: "DELETE",
-    });
+    const confirmDelete = window.confirm("Você tem certeza que deseja excluir este veículo?");
+    if (confirmDelete) {
+      await fetch(`${url}/${id}`, {
+        method: "DELETE",
+      });
 
-    setProducts((prevProducts) => prevProducts.filter((product) => product.id !== id));
+      setProducts((prevProducts) => prevProducts.filter((product) => product.id !== id));
+    }
   };
 
-  //Edita um elemento
+  // Edita um elemento
   const handleEdit = (product) => {
     setFormData({ marca: product.marca, modelo: product.modelo, ano: product.ano, preco: product.preco });
     setEditMode(true);
@@ -28,7 +31,7 @@ export function ListagemVeiculo({ setEditMode, setEditId, setProducts, products 
     setEditingProduct(product);
   };
 
-  //Sobe um elemento
+  // Sobe um elemento
   const handleUpdate = async (e) => {
     e.preventDefault();
     const updatedProduct = { ...editingProduct, ...formData };
@@ -73,7 +76,7 @@ export function ListagemVeiculo({ setEditMode, setEditId, setProducts, products 
               src="https://img.icons8.com/ios-filled/50/x.png"
               onClick={excluir}
               alt="Fechar"
-              style={{cursor:'pointer'}}
+              style={{ cursor: 'pointer' }}
             />
           </div>
 
@@ -105,10 +108,8 @@ export function ListagemVeiculo({ setEditMode, setEditId, setProducts, products 
               <input type="text" name="ano" value={formData.ano} onChange={handleChange} required />
               <input type="text" name="preco" value={formData.preco} onChange={handleChange} placeholder="Preço" required />
               <div className='buttonEditar'>
-
                 <button type="submit">Salvar</button>
                 <button type="button" onClick={() => setEditingProduct(null)}>Cancelar</button>
-
               </div>
             </form>
           )}

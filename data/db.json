@@ -1,11 +1,11 @@
 {
   "products": [
     {
-      "id": "16fd",
-      "marca": "bmw",
-      "modelo": "seiNão",
-      "ano": "2024",
-      "preco": "2000000"
+      "id": "7080",
+      "marca": "teste",
+      "modelo": "232",
+      "ano": "1900",
+      "preco": "200"
     }
   ]
 }
