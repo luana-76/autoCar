@@ -1,0 +1,103 @@
+#cadastro{
+
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(1,1,1,1) 24%);
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -173px;
+
+}
+
+#cadastro div{
+
+    margin-left: 70px
+
+}
+
+#cadastro h2{
+
+    font-size: 2em;
+    margin-top: 0;
+    color: #fff;
+
+}
+
+form input{
+
+    border-radius: 4px;
+    background: #171717c0;
+    border: 1px solid #565656;
+    color: #b8b8b8;
+    font-size: 1em;
+    font-weight: 500;
+    height: 50px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    outline: none;
+    padding-left: 15px;
+    display: flex;
+    width: 172%;
+
+}
+
+form input:focus{
+
+    border-bottom: 5px solid #970812;
+
+}
+
+/* Estilização do placeholder */
+input::placeholder {
+
+    color: #a6a6a6;
+    font-weight: 500;
+    
+}
+
+input[type='password']:focus,
+input[type='email']:focus{border: 2px solid #fff;}
+
+input:focus::placeholder{
+
+    font-size: 0.8em;
+    position:relative;
+    top: -5px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease; 
+
+}
+
+/* Quando não estiver em foco */
+input:not(:focus)::placeholder {
+
+    top: 0px;
+    transition: all 0.3s ease; 
+
+}
+
+#botaoEnviar{
+
+    background: #920911;
+    width: 179%;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#botaoEnviar:hover{
+
+    transition: background, font-size 1s;
+    background: #a22b33;
+    font-size: 1.2em;
+
+}
+
+#cadastro img[alt='Carro']{
+
+    width: 80vh;
+    margin-right: 80px;
+}

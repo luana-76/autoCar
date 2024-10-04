@@ -1,0 +1,120 @@
+#listagem #lista{
+
+    background: #920911;
+    color: #fff;
+    position: relative;
+    top: -170px;
+    /*height: 20vh;*/
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100vw;
+    border: none;
+    outline: none;
+
+}
+#listagem #lista:hover{
+
+    transition: background 1s;
+    background: #a22b33;
+
+}
+
+
+/* Caixa listagem */
+
+.caixaElementos{
+
+    width: 70vw;
+    height: 500px;
+    background: #cccccc;
+    position:absolute;
+    top: 90vh;
+    left: 16vw;
+    overflow: auto;
+    
+}
+
+#headerCaixa{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#headerCaixa h3{
+
+    font-size: 1.3em;
+
+}
+
+.buttons button{
+
+    background: #920911;
+    color: #fff;
+    margin-left: 20px;
+
+}
+.elementos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid #920911;
+
+}
+
+ul{
+
+    list-style: none;
+}
+.bold{
+
+    font-weight: 700;
+
+}
+
+/*Estilização do form de edição*/
+.editor{
+
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    background: #000;
+    color: #fff;
+    width: 50%;
+    height:78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.editor input{
+
+    width: 70%;
+
+}
+
+.buttonEditar button{
+
+    background: #970812;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.buttonEditar button:hover{
+
+    border: none;
+    background: #a22b33;
+
+}
+.buttonEditar button:first-child{
+
+    margin-right: 20px;
+
+}

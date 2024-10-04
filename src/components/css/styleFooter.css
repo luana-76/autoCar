@@ -1,0 +1,11 @@
+footer{
+
+    background: linear-gradient(180deg, rgba(146,9,17,1) 0%, rgba(1,1,1,1) 51%);
+    position: relative;
+    top: -181px;
+    height: 44vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
