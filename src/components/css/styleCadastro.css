@@ -101,3 +101,50 @@ input:not(:focus)::placeholder {
     width: 80vh;
     margin-right: 80px;
 }
+
+@media screen and (max-width: 1200px){
+
+    #cadastro{
+
+        width: 100vw;
+        top: -22vh;
+
+    }
+
+    #cadastro div{margin: 0 50% 0 14%;}
+
+    #cadastro form{width: 70vw;}
+
+    #cadastro input{width: 100%;}
+
+    #botaoEnviar{width: 103% !important;}
+    
+    #cadastro img[alt='Carro']{display: none;}
+
+}
+
+@media screen and (max-width: 681px){
+
+    #cadastro img[alt='Carro']{display: none;}
+
+    #cadastro{top: -121px;}
+
+    #cadastro div{margin: 0 50% 0 13%}
+
+}
+@media screen and (max-width: 500px){
+
+    #cadastro h2 {font-size: 1.5em;}
+
+    #cadastro{
+
+        justify-content: space-around;
+        top: -19vh;
+
+    }
+
+    #cadastro input{width: 100%;}
+
+    #botaoEnviar{width: 107% !important;}
+
+}

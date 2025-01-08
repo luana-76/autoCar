@@ -2,10 +2,43 @@ footer{
 
     background: linear-gradient(180deg, rgba(146,9,17,1) 0%, rgba(1,1,1,1) 51%);
     position: relative;
-    top: -181px;
+    top: -35vh;
     height: 44vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
+}
+@media screen and (max-width: 1200px){
+
+    footer{
+
+        top: -19vh;
+
+    }
+
+    #listagem #lista{
+
+        top: -18vh !important;
+        font-size: 1.5em !important;
+
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    footer{
+
+        top: -19vh;
+
+    }
+
+    #listagem #lista{
+
+        /*top: -13vh;*/
+        font-size: 1.2em;
+
+    }
+
 }

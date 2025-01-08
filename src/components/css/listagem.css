@@ -3,13 +3,13 @@
     background: #920911;
     color: #fff;
     position: relative;
-    top: -170px;
+    top: -34vh;
     /*height: 20vh;*/
     font-size: 1.7em;
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 100vw;
+    /*width: 100vw;*/
     border: none;
     outline: none;
 
@@ -116,5 +116,15 @@ ul{
 .buttonEditar button:first-child{
 
     margin-right: 20px;
+
+}
+
+@media screen and (max-width: 1200px){
+
+    .caixaElementos{
+
+        top: 19vh;
+        
+    }
 
 }
